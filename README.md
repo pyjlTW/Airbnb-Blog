@@ -13,11 +13,14 @@ Since its inception, Airbnb has experienced meteoric growth, connecting over 5 m
 
 ## Chicago's Airbnb Adventure: Embracing Innovation Amid Regulation
 
-In 2016, as Airbnb's presence in Chicago flourished, so too did the need for regulatory oversight. The City of Chicago implemented new ordinances aimed at ensuring fair play and accountability within the home-sharing industry[^1]. These regulations, including registration requirements, taxation, and limitations on rental units[^2], introduced both opportunities and challenges for Airbnb hosts.
+In 2016, as Airbnb's presence in Chicago flourished, so too did the need for regulatory oversight. The City of Chicago implemented new ordinances aimed at ensuring fair play and accountability within the home-sharing industry[^2]. These regulations, including registration requirements, taxation, and limitations on rental units[^3], introduced both opportunities and challenges for Airbnb hosts.
+
+> [!NOTE] 
+>Chicago hosted 55.2 million tourists in 2019, boasting an average occupancy rate of 63.1% in October 2023[^1]. This underscores Chicago's status as a tourism hotspot with exceptionally high booking rates.
 
 ### Unveiling Insights Through Data Analysis
 
-To understand the impact of these regulations, we embarked on a data-driven exploration, analyzing over 730,000+ data points sourced directly from Airbnb and Kaggle. Our analysis uncovered intriguing trends, notably a surge in listings leading up to 2016, driven by factors such as the increasing popularity of home-sharing[^3] and the growing acceptance of the sharing economy[^4]. However, following the introduction of regulations in 2016, we observed a notable decline in listings, signaling the beginning of a shift in the home-sharing landscape. Delving deeper, we unearthed the differential impact of these regulations on individual hosts versus larger enterprises.
+To understand the impact of these regulations, we embarked on a data-driven exploration, analyzing over 730,000+ data points sourced directly from Airbnb and Kaggle. Our analysis uncovered intriguing trends, notably a surge in listings leading up to 2016, driven by factors such as the increasing popularity of home-sharing[^4] and the growing acceptance of the sharing economy[^6]. However, following the introduction of regulations in 2016, we observed a notable decline in listings, signaling the beginning of a shift in the home-sharing landscape. Delving deeper, we unearthed the differential impact of these regulations on individual hosts versus larger enterprises.
 
 <p align="center"><img width="766" alt="Screenshot 2024-05-02 at 10 34 10 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/149203625/0083f9f3-005c-44e4-a272-94c3a7f149ee"></p>
 
@@ -60,9 +63,9 @@ As Chicago's Airbnb landscape continues to evolve, there are several key takeawa
 
 By aligning strategic initiatives with the needs and aspirations of individual hosts, Airbnb can navigate the intricacies of the sharing economy, ensuring a vibrant and sustainable ecosystem for hosts and guests alike. As Chicago's Airbnb adventure unfolds, the journey towards innovation and growth continues, fueled by collaboration, resilience, and a shared commitment to hospitality.
 
-
-[^1]: https://www.illinoispolicy.org/chicago-city-council-enacts-airbnb-regulations/
-[^2]: https://www.chicago.gov/city/en/depts/bacp/supp_info/sharedhousingandaccomodationslicensing.html
-[^3]: https://news.airbnb.com/airbnb-in-illinois-2016-in-review/
-[^4]: https://d3.harvard.edu/platform-rctom/submission/airbnb-how-the-sharing-economy-is-disrupting-the-travel-industry/
-[^5]: https://insideairbnb.com/
+[^1]: https://gitnux.org/chicago-tourism-statistics/
+[^2]: https://www.illinoispolicy.org/chicago-city-council-enacts-airbnb-regulations/
+[^3]: https://www.chicago.gov/city/en/depts/bacp/supp_info/sharedhousingandaccomodationslicensing.html
+[^4]: https://news.airbnb.com/airbnb-in-illinois-2016-in-review/
+[^5]: https://d3.harvard.edu/platform-rctom/submission/airbnb-how-the-sharing-economy-is-disrupting-the-travel-industry/
+[^6]: https://insideairbnb.com/
