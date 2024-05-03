@@ -32,7 +32,7 @@ While businesses adeptly navigated the regulatory landscape, smaller individual 
 A notable distinction emerged between individual hosts and corporate entities in their approach to Airbnb hosting. Individual hosts typically manage an average of 1.5 listings per host, whereas companies maintain a significantly higher average of 9.5 listings per host. This discrepancy underscores the contrasting operational scales and strategies employed by individual hosts and businesses in the Airbnb ecosystem.
 
 > [!CAUTION]
-> I will add the graph that demonstrates the difference in trend listings by host type (View Power Point Slide 16). This is the part where the professor asked us to include in the report 
+> I will add the graph that demonstrates the difference in trend listings by host type (View Power Point Slide 16). This is the part where the professor asked us to include in the report.
 
 ### Additional Insights:
 
