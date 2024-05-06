@@ -1,0 +1,384 @@
+---
+title: "3 Airbnb"
+author: "Audrey Jung"
+date: "2024-04-29"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(GGally)
+```
+
+```{r}
+june <- read.csv("june_listings.csv")
+sept <- read.csv("sept_listings.csv")
+dec <- read.csv("dec_listings.csv")
+```
+
+```{r}
+df <- dec %>% select(host_since, price)
+df <- df %>% mutate(price = parse_number(str_match(price,"\\$([0-9,.]+)")[,2]))
+df <- drop_na(df)
+df <- df %>%  filter(price != 99998)
+
+df <- df
+df$year <- year(df$host_since)
+df$month <- month(df$host_since)
+```
+
+```{r}
+# count by year
+df_year <- df %>% filter(year > "2009") %>% group_by(year) %>% count()
+
+# plot
+ggplot(df_year, aes(x=year, y=n)) + 
+  geom_point() +
+  geom_line() + 
+  labs(title = "New Listings in Chicago") +
+  ylab("Count of New Listings") + 
+  xlab("Year") +
+  scale_x_continuous(breaks = 2008:2023) + 
+  geom_vline(xintercept = 2016, color = "blue", linetype = "dashed") +
+  annotate("text", x = 2018.5, y = 1500, label = "Shared housing ordinance goes into effect", size = 3) +
+  geom_vline(xintercept = 2014, color = "red", linetype = "dashed") +
+  annotate("text", x = 2012.6, y = 700, label = "Superhosts introduced", size = 3) +
+  theme_classic()
+
+# avg. price by year
+df_year_price <- df %>% filter(year > "2009") %>% group_by(year) %>% summarise(avg_price = mean(price))
+
+# plot
+ggplot(df_year_price, aes(x=year, y=avg_price)) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Average Price by Year (Chicago)") +
+  ylab("average price") +
+  geom_vline(xintercept = 2014, color = "red", linetype = "dashed") +
+  annotate("text", x = 2015.4, y = 225, label = "Superhosts introduced", size = 3) +
+  geom_vline(xintercept = 2018, color = "green", linetype = "dashed") +
+  annotate("text", x = 2016.8, y = 180, label = "Hotel Tax is imposed", size = 3) +
+  geom_vline(xintercept = 2021, color = "purple", linetype = "dashed") +
+  annotate("text", x = 2022.2, y = 155, label = "Annual license fees", size = 3) +
+  scale_x_continuous(breaks = 2008:2023) + 
+  theme_classic()
+
+# write_csv(df_year_price, "avg_price_year.csv")
+
+# Superhosts: https://www.airbnb.com/d/superhost/1000, https://www.airbnb.com/help/article/829, https://abnb.co/d3jcs
+# Hotel Accommodations Tax: https://www.chicago.gov/city/en/depts/fin/provdrs/tax_division/news/2018/october/new-shared-housing-surcharge-effective-12-1-18.html
+# Annual license fees: https://news.wttw.com/2021/06/01/new-rules-chicagos-home-sharing-industry-set-kick
+```
+
+```{r}
+# import file with sentiment scores
+reviews <- read_csv("airbnb_chicago_final2.csv",
+               col_types = cols(
+                 host_since = col_date(),
+                 host_response_time = col_factor(),
+                 room_type = col_factor()
+               ))
+```
+
+```{r}
+# histogram of sentiment score
+ggplot(reviews, aes(mean)) + 
+  geom_histogram(bins = 130) +
+  labs(title = "Mean Sentiment Scores of Reviews",
+       subtitle = "Airbnb Listings in Chicago") +
+  ylab("Number of Listings") +
+  xlab("Sentiment Score") +
+  theme_minimal()
+
+# boxplot of sentiment score
+ggplot(reviews, aes(mean)) +
+  geom_boxplot() + 
+  labs(title = "Mean Sentiment Scores of Reviews") +
+  xlab("Mean") +
+  theme_classic()
+
+# sentiment score on host_response_time
+ggplot(reviews, aes(x = host_response_time, y = mean)) + 
+  geom_boxplot() +
+  labs(title = "Sentiment Scores of Reviews on Host Response Times",
+       subtitle = "Airbnb Listings in Chicago") +
+  ylab("Mean") +
+  xlab("Host Response Times") +
+  theme_classic()
+
+# sentiment score on host_is_superhost
+ggplot(reviews, aes(x = host_is_superhost, y = mean)) + 
+  geom_boxplot() +
+  labs(title = "Sentiment Scores of Reviews on Superhost Status",
+       subtitle = "Airbnb Listings in Chicago") +
+  ylab("Mean") +
+  xlab("Superhost Status") +
+  theme_classic()
+```
+
+```{r}
+# select relevant variables
+june1 <- june %>% select(id, host_id, host_is_superhost, neighbourhood_cleansed, latitude, longitude, price, room_type, number_of_reviews, review_scores_rating, review_scores_accuracy, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location, review_scores_value, calculated_host_listings_count)
+sept1 <- sept %>% select(id, host_id, host_is_superhost, neighbourhood_cleansed, latitude, longitude, room_type, price, number_of_reviews, review_scores_rating, review_scores_accuracy, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location, review_scores_value, calculated_host_listings_count)
+dec1 <- dec %>% select(id, host_id, host_is_superhost, neighbourhood_cleansed, latitude, longitude, room_type, price, number_of_reviews, review_scores_rating, review_scores_accuracy, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location, review_scores_value, calculated_host_listings_count)
+  
+# remove missing values
+june1 <- replace(june1, june1 == "N/A", NA)
+sept1 <- replace(sept1, sept1 == "N/A", NA)
+dec1 <- replace(dec1, dec1 == "N/A", NA)
+
+colSums(is.na(june1))
+colSums(is.na(sept1))
+colSums(is.na(dec1))
+
+june1 <- na.omit(june1)
+sept1 <- na.omit(sept1)
+dec1 <- na.omit(dec1)
+
+# clean superhost column
+distinct(june1, june1$host_is_superhost)
+june1 <- june1 %>% filter(host_is_superhost == "t" | host_is_superhost == "f")
+sept1 <- sept1 %>% filter(host_is_superhost == "t" | host_is_superhost == "f")
+dec1 <- dec1 %>% filter(host_is_superhost == "t" | host_is_superhost == "f")
+```
+
+```{r}
+# count superhosts
+june_count <- june1 %>% 
+  group_by(host_is_superhost) %>%
+  count() %>%
+  mutate(month = "June")
+sept_count <- sept1 %>%
+  group_by(host_is_superhost) %>%
+  count() %>%
+  mutate(month = "September")
+dec_count <- dec1 %>% 
+  group_by(host_is_superhost) %>%
+  count() %>% 
+  mutate(month = "December")
+# combine results
+counts <- bind_rows(june_count, sept_count, dec_count)
+# plot counts 
+order = c("June", "September", "December")
+counts$month <- factor(counts$month, levels = order)
+
+ggplot(counts, aes(x = month, y = n, group = host_is_superhost, color = host_is_superhost)) +
+  geom_point() +
+  geom_line() + 
+  labs(title = "Hosts by Superhost Status in 2023",
+       color = "Superhost Status") +
+  scale_color_discrete(labels = c("f" = "False", "t" = "True")) +
+  xlab("Month") +
+  ylab("Count") + 
+  theme_bw()
+
+```
+
+```{r}
+# mean reviews scores
+june_reviews <- june1 %>% 
+  group_by(host_is_superhost) %>% 
+  summarise(Rating = mean(review_scores_rating),
+            Accuracy = mean(review_scores_accuracy),
+            Cleanliness = mean(review_scores_cleanliness),
+            Checkin = mean(review_scores_checkin),
+            Communication = mean(review_scores_communication),
+            Location = mean(review_scores_location),
+            Value = mean(review_scores_value)) %>%
+  mutate(month = "June")
+sept_reviews <- sept1 %>% 
+  group_by(host_is_superhost) %>% 
+  summarise(Rating = mean(review_scores_rating),
+            Accuracy = mean(review_scores_accuracy),
+            Cleanliness = mean(review_scores_cleanliness),
+            Checkin = mean(review_scores_checkin),
+            Communication = mean(review_scores_communication),
+            Location = mean(review_scores_location),
+            Value = mean(review_scores_value)) %>%
+  mutate(month = "September")
+dec_reviews <- dec1 %>% 
+  group_by(host_is_superhost) %>% 
+  summarise(Rating = mean(review_scores_rating),
+            Accuracy = mean(review_scores_accuracy),
+            Cleanliness = mean(review_scores_cleanliness),
+            Checkin = mean(review_scores_checkin),
+            Communication = mean(review_scores_communication),
+            Location = mean(review_scores_location),
+            Value = mean(review_scores_value)) %>%
+  mutate(month = "December")
+# combine results
+scores <- bind_rows(june_reviews, sept_reviews, dec_reviews)
+
+# plot rating
+order = c("June", "September", "December")
+scores$month <- factor(scores$month, levels = order)
+
+ggplot(scores, aes(x = month, y = Rating, group = host_is_superhost, color = host_is_superhost)) +
+  geom_point() +
+  geom_line() + 
+  labs(title = "Hosts by Superhost Status in 2023",
+       color = "Superhost Status") +
+  scale_color_discrete(labels = c("f" = "False", "t" = "True")) +
+  xlab("Month") +
+  ylab("Count") + 
+  theme_bw()
+
+# table
+table <- data.frame()
+
+avg_score <- scores %>%
+  select(host_is_superhost, Rating, month)
+
+
+avg_score <- pivot_wider(avg_score, names_from = month, values_from = Rating)
+
+avg_score <- avg_score %>%
+  mutate(superhost_status = host_is_superhost) %>% 
+  select(superhost_status, June, September, December)
+
+avg_score <- avg_score %>% 
+  mutate(superhost_status = ifelse(superhost_status == "t", "True", "False")) 
+
+print(avg_score)
+```
+
+
+```{r}
+# scatterplots on number of reviews against reviews
+ggplot(june1, aes(number_of_reviews, review_scores_rating, color = host_is_superhost)) +
+  geom_point(alpha = .5) +
+  labs(title = "Review Scores Rating",
+       color = "Superhost Status") +
+  scale_color_discrete(labels = c("f" = "False", "t" = "True")) +
+  ylab("Rating") +
+  xlab("Number of Reviews") +
+  theme_bw()
+ggplot(june1, aes(number_of_reviews, review_scores_accuracy, color = host_is_superhost)) +
+  geom_point(alpha = .5)
+
+
+
+```
+
+
+
+```{r}
+# subset data
+df1 <- dec %>% select(id, host_id, host_since, host_response_time, host_response_rate, host_acceptance_rate, number_of_reviews, host_is_superhost, room_type, review_scores_rating, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location, review_scores_value, reviews_per_month, calculated_host_listings_count)
+
+# clean percentages
+df1$host_acceptance_rate <- as.numeric(gsub("%", "", df1$host_acceptance_rate)) / 100
+df1$host_response_rate <- as.numeric(gsub("%", "", df1$host_response_rate)) / 100
+
+# remove nulls
+df1$host_response_time <- replace(df1$host_response_time, df1$host_response_time == "N/A", NA)
+colSums(is.na(df1))
+df1 <- na.omit(df1)
+
+# filter to remove hosts with more than 3 listings
+df1 <- df1 %>% filter(calculated_host_listings_count < 4)
+
+# calculate the number of months
+df1$months_since_hosting <- as.numeric(difftime("2023-12-01", df1$host_since, units = "weeks")) / 4.34524
+df1$months_since_hosting <- as.integer(ceiling(df1$months_since_hosting))
+
+# change to factor
+df1$host_is_superhost <- as.factor(df1$host_is_superhost)
+df1$host_response_time <- as.factor(df1$host_response_time)
+df1$room_type <- as.factor(df1$room_type)
+
+# remove anomalies
+df1 <- df1 %>% filter(host_is_superhost == "t" | host_is_superhost == "f")
+
+super <- df1 %>% filter(host_is_superhost == "t")
+super <- super %>% filter(number_of_reviews >= 10)
+super <- super %>% filter(review_scores_rating >= 4.8)
+super <- super %>% filter(host_response_rate >= .9)
+
+nsuper <- df1 %>% filter(host_is_superhost == "f")
+
+# final listings data
+df2 <- rbind(super, nsuper)
+```
+
+
+```{r}
+# subset data
+df3 <- df2 %>% 
+  select(host_response_rate, host_acceptance_rate, months_since_hosting, number_of_reviews, reviews_per_month, review_scores_rating, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location, review_scores_value)
+
+df4 <- df2 %>% 
+  select(host_response_rate, host_acceptance_rate, months_since_hosting, number_of_reviews, reviews_per_month, review_scores_rating, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location, review_scores_value)
+
+# normalization
+df3 = scale(df3)
+
+# Decide how many clusters to look at
+n_clusters <- 10
+
+# Initialize wss
+wss <- numeric(n_clusters)
+
+set.seed(1)
+
+# possible clusters
+for (i in 1:10) {
+  # Fit the model: km.out
+  km.out <- kmeans(df3, centers = i, nstart = 20)
+  # Save the within cluster sum of squares
+  wss[i] <- km.out$tot.withinss
+}
+
+# Produce a scree plot
+wss_df <- tibble(clusters = 1:10, wss = wss)
+ 
+scree_plot <- ggplot(wss_df, aes(x = clusters, y = wss, group = 1)) +
+    geom_point(size = 4)+
+    geom_line() +
+    scale_x_continuous(breaks = c(2, 4, 6, 8, 10)) +
+    xlab('Number of clusters')
+scree_plot
+
+# kmeans
+set.seed(1) 
+km <- kmeans(df3, centers = 3, nstart = 20)
+# add to original data
+df4$cluster_id <- factor(km$cluster)
+
+#df3 %>% group_by(cluster_id) %>% count()
+
+agg <- aggregate(df4, by=list(cluster=km$cluster), mean)
+
+agg %>% 
+  mutate(response_rate = host_response_rate,
+         acceptance_rate = host_acceptance_rate,
+         host_duration = months_since_hosting,
+         num_reviews = number_of_reviews,
+         mth_reviews = reviews_per_month,
+         rating = review_scores_rating,
+         cleanliness = review_scores_cleanliness,
+         checkin = review_scores_checkin,
+         communication = review_scores_communication,
+         location = review_scores_location,
+         value = review_scores_value) %>%
+  select(cluster, response_rate, acceptance_rate, num_reviews, rating, cleanliness, checkin, communication, location, value) %>% 
+  mutate_all(round, digits = 2)
+```
+
+
+```{r}
+# visualization 1
+pairs(df4)
+
+# visualization 2
+library(ggpubr)
+library(factoextra)
+
+fviz_cluster(km, data = df3,
+             palette = c("#2E9FDF", "#00AFBB", "#E7B800"), 
+             geom = "point",
+             ellipse.type = "convex", 
+             ggtheme = theme_bw(),
+             main = "Cluster Plot")
+```
+
