@@ -3,18 +3,20 @@
 **Date:** 5/2/2024  
 **Authors:** Audrey Jung, Jay Lee, Johnny Chang, Paul Yang, Zoe Chen
 
-## Chicago's Airbnb Adventure: Embracing Innovation Amid Regulation
+## Introduction: Chicago's Regulatory Response to Airbnb's Rapid Growth
 
-In 2016, as Airbnb's presence in Chicago flourished, so too did the need for regulatory oversight. The City of Chicago implemented new ordinances aimed at ensuring fair play and accountability within the home-sharing industry[^2]. These regulations, including registration requirements, taxation, and limitations on rental units[^3], introduced both opportunities and challenges for Airbnb hosts.
+Airbnb has reshaped urban hospitality by enabling people to rent out their private spaces. By 2016, Airbnb had woven itself into the fabric of Chicago's tourism economy, flourishing to such an extent that regulatory measures became necessary to manage its impacts on the city. In response to Airbnb's expansion, the City of Chicago introduced comprehensive regulations to maintain control and fairness in the home-sharing market[^2]. These regulations, including registration requirements, taxation, and limitations on rental units[^3], introduced both opportunities and challenges for Airbnb hosts.
 
 > [!NOTE] 
 >Chicago hosted 55.2 million tourists in 2019, boasting an average occupancy rate of 63.1% in October 2023[^1]. This underscores Chicago's status as a tourism hotspot with exceptionally high booking rates.
 
 ### Unveiling Insights Through Data Analysis
 
-To understand the impact of these regulations, we embarked on a data-driven exploration, analyzing over 730,000+ data points sourced directly from Airbnb and Kaggle. Our analysis uncovered intriguing trends, notably a surge in listings leading up to 2016, driven by factors such as the increasing popularity of home-sharing[^4] and the growing acceptance of the sharing economy[^6]. However, following the introduction of regulations in 2016, we observed a notable decline in listings, signaling the beginning of a shift in the home-sharing landscape. Delving deeper, we unearthed the differential impact of these regulations on individual hosts versus larger enterprises.
+Our analysis of over 730,000 data points reveals a surge in Airbnb listings until 2016, driven by factors such as the increasing popularity of home-sharing[^4] and the growing acceptance of the sharing economy[^6], followed by a noticeable decline post-regulation, as illustrated in the accompanying graph.
 
-<p align="center"><img width="766" alt="Screenshot 2024-05-02 at 10 34 10 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/149203625/0083f9f3-005c-44e4-a272-94c3a7f149ee"></p>
+![download-4](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/c5bdad3e-56ce-4dca-8d80-ce2f975e927c)
+
+Delving deeper, we unearthed the differential impact of these regulations on individual hosts versus larger enterprises.
 
 
 Our analysis further revealed a nuanced impact of the 2016 ordinance on Airbnb listings in Chicago. While there was an overall decrease in listings by individual hosts, stability was observed in listings from companies. However, it's important to note that the apparent increase in company listings was primarily driven by outliers. Upon closer examination and excluding these outliers, we found that the majority of companies experienced similar declines in listings as individual hosts.
