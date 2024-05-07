@@ -3,7 +3,7 @@
 **Date:** 5/2/2024  
 **Authors:** Audrey Jung, Jay Lee, Johnny Chang, Paul Yang, Zoe Chen
 
-## Introduction: Chicago's Regulatory Response to Airbnb's Rapid Growth
+## Chicago's Regulatory Response to Airbnb's Rapid Growth
 
 Airbnb has reshaped urban hospitality by enabling people to rent out their private spaces. By 2016, Airbnb had woven itself into the fabric of Chicago's tourism economy, flourishing to such an extent that regulatory measures became necessary to manage its impacts on the city. In response to Airbnb's expansion, the City of Chicago introduced comprehensive regulations to maintain control and fairness in the home-sharing market[^2]. These regulations, including registration requirements, taxation, and limitations on rental units[^3], introduced both opportunities and challenges for Airbnb hosts.
 
@@ -59,10 +59,10 @@ The data above showcases the clustering of listings with a focus on Superhost di
 #### Super host percentage
 <img width="745" alt="Screenshot 2024-05-07 at 2 40 09 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/acdbbb37-707c-4ee6-96e8-15f609320482">
 
-#### Sentiment difference of super host listing reviews
+#### Sentiment in super host
 <img width="514" alt="Screenshot 2024-05-07 at 2 38 59 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/3f82b2c7-fc68-4e21-b30d-1c23401b2438">
 
-While companies in have a lower percentage of Superhosts at 35%, individual hosts achieve a higher Superhost status at 46%. This divergence highlights a key insight: Superhosts among individual hosts are more prevalent in areas with higher regulatory impacts. This suggests that individual hosts may leverage the benefits of Superhost status—such as increased visibility and trust—to counterbalance the challenges posed by strict regulations. This is contrasted by corporate hosts, who might not rely as heavily on Superhost status due to their different operational scales and strategies.
+This divergence highlights a key insight: Superhosts among individual hosts are more prevalent in areas with higher regulatory impacts. This suggests that individual hosts may leverage the benefits of Superhost status—such as increased visibility and trust—to counterbalance the challenges posed by strict regulations. This is contrasted by corporate hosts, who might not rely as heavily on Superhost status due to their different operational scales and strategies.
 
 #### Benefits of superhost
 <img width="441" alt="Screenshot 2024-05-07 at 2 35 30 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/a5d42804-9090-49f5-916e-ea885b8af8ce">
@@ -73,11 +73,11 @@ Metrics by Superhosts show that individual superhosts indeed contribute to overa
 ![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/3f4a7406-cd44-4a5d-9a06-cfb8fe0c153e)
 <img width="974" alt="Screenshot 2024-05-07 at 2 36 40 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/5281c22c-9b01-495f-8f20-7d13d579f0fe">
 
-This is an application of k-means clustering to host attributes and guest ratings. It identified key groups among hosts, with Cluster 1 and Cluster 2 demonstrating particularly revealing trends. These clusters indicate that while the current Superhost rating threshold stands at 4.8, a more nuanced approach might be beneficial. Our findings suggest that ratings of 4.9 and 4.5 serve as more effective cutoffs for differentiating levels of service quality and guest satisfaction.
+With k-means clustering to host attributes and guest ratings, we identified key groups among hosts. The 2 main clusters indicate that while the current Superhost rating threshold stands at 4.8, a more nuanced approach might be beneficial. Our findings suggest that ratings of 4.9 and 4.5 serve as more effective cutoffs for differentiating levels of service quality and guest satisfaction.
 
-Our clustering analysis suggests a more nuanced approach to the Superhost system, proposing multiple recognition levels to reflect the diverse qualities of hosting excellence. By applying similar data-driven methods to refine other Superhost criteria, such as response times and cancellation rates, Airbnb can better align its recognition program with the varied performance and operational styles of hosts. These adjustments will ensure the program's criteria are more inclusive and representative of all hosts' efforts, leading seamlessly into strategic initiatives for the platform's growth in Chicago.
+Our analysis recommends a tiered Superhost system that better reflects the diverse qualities of hosting. By using data-driven methods to refine criteria like response times and cancellation rates, Airbnb can better align its recognition program with the varied performance and operational styles of hosts. These adjustments will ensure the program's criteria are more inclusive and representative of all hosts' efforts
 
-## Looking Ahead: Strategies for Success in the Sharing Economy
+## Strategies for Success in the Sharing Economy
 
 As the Airbnb landscape in Chicago continues to evolve, it becomes imperative to adapt our strategies to the realities of the local market. Enhancing the Superhost program, advocating for supportive regulatory frameworks, and expanding access to resources are pivotal steps. These efforts will not only aid in the recovery and stability of small-scale hosts affected by the 2016 ordinance but also enrich the overall Airbnb ecosystem, ensuring a vibrant, equitable, and sustainable future for all stakeholders involved in Chicago’s dynamic home-sharing landscape.
 
@@ -91,3 +91,5 @@ By aligning strategic initiatives with the needs and aspirations of individual h
 [^4]: https://news.airbnb.com/airbnb-in-illinois-2016-in-review/
 [^5]: https://d3.harvard.edu/platform-rctom/submission/airbnb-how-the-sharing-economy-is-disrupting-the-travel-industry/
 [^6]: https://insideairbnb.com/
+
+word count: 1061
