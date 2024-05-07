@@ -3,14 +3,6 @@
 **Date:** 5/2/2024  
 **Authors:** Audrey Jung, Jay Lee, Johnny Chang, Paul Yang, Zoe Chen
 
-## Introduction: A New Way to Explore Chicago
-
-Imagine strolling through the lively streets of Chicago, where towering skyscrapers stand as monuments to progress, and the echoes of history reverberate in every corner. Amidst this urban tapestry, a revolutionary concept emerged in 2008, reshaping the landscape of travel—the birth of Airbnb. By allowing individuals to open their homes to travelers, Airbnb introduced a new era of hospitality, transforming vacations into personalized experiences akin to staying with friends rather than in impersonal hotel rooms.
-
-## The Rise of Airbnb: A Global Phenomenon
-
-Since its inception, Airbnb has experienced meteoric growth, connecting over 5 million hosts worldwide with travelers seeking unique accommodations. With a staggering 7.7 million listings spanning across the globe, Airbnb caters to every traveler's whims, offering everything from quaint cottages to exotic treehouses. However, Airbnb is more than just a platform for lodging; it's a gateway to immersive experiences through its "Experiences" feature, where locals share their passions and expertise with travelers eager to explore beyond the beaten path.
-
 ## Chicago's Airbnb Adventure: Embracing Innovation Amid Regulation
 
 In 2016, as Airbnb's presence in Chicago flourished, so too did the need for regulatory oversight. The City of Chicago implemented new ordinances aimed at ensuring fair play and accountability within the home-sharing industry[^2]. These regulations, including registration requirements, taxation, and limitations on rental units[^3], introduced both opportunities and challenges for Airbnb hosts.
@@ -25,21 +17,25 @@ To understand the impact of these regulations, we embarked on a data-driven expl
 <p align="center"><img width="766" alt="Screenshot 2024-05-02 at 10 34 10 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/149203625/0083f9f3-005c-44e4-a272-94c3a7f149ee"></p>
 
 
+Our analysis further revealed a nuanced impact of the 2016 ordinance on Airbnb listings in Chicago. While there was an overall decrease in listings by individual hosts, stability was observed in listings from companies. However, it's important to note that the apparent increase in company listings was primarily driven by outliers. Upon closer examination and excluding these outliers, we found that the majority of companies experienced similar declines in listings as individual hosts.
+
+**Impact on Pricing Strategies:** Additionally, our analysis unveiled significant differences in pricing strategies between individual hosts and businesses in response to the 2016 regulations. While individual hosts experienced either a decrease or stability in prices, businesses tended to increase their prices. We theorized that businesses could offset increased taxes and fees by raising prices due to consistently high demand in central areas. Conversely, individual hosts in less demanded outer regions faced challenges in raising prices without negatively affecting sales.
+
+<p align="center"><img width="869" alt="Screenshot 2024-05-06 at 9 48 55 PM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/149203625/174e1f49-547d-4c27-9eb3-ca9022bb45c0"></p>
+
+
 ### Impact of Regulations: A Tale of Two Hosts
 
 While businesses adeptly navigated the regulatory landscape, smaller individual hosts encountered substantial obstacles. The imposition of high taxes, stringent registration requirements, and substantial fines disproportionately impacted individual hosts, resulting in a decline in their listings. In contrast, businesses, leveraging their scale and resources, demonstrated greater resilience in adapting to regulatory changes.
 
 A notable distinction emerged between individual hosts and corporate entities in their approach to Airbnb hosting. Individual hosts typically manage an average of 1.5 listings per host, whereas companies maintain a significantly higher average of 9.5 listings per host. This discrepancy underscores the contrasting operational scales and strategies employed by individual hosts and businesses in the Airbnb ecosystem.
 
-> [!CAUTION]
-> I will add the graph that demonstrates the difference in trend listings by host type (View Power Point Slide 16). This is the part where the professor asked us to include in the report.
 
 ### Additional Insights:
 
 In addition to analyzing the impact of regulations on listing quantities, we delved into the sentiments expressed by guests following the implementation of regulatory measures. Through sentiment analysis of overall ratings, we discovered a decrease in sentiment scores post-regulation. This suggests that guests may be less satisfied with the service provided by hosts, possibly influenced by hosts reducing the quality of their service to mitigate the effects of regulations without necessarily reducing their listing prices.
 
 <p align="center"><img width="461" alt="Screenshot 2024-05-02 at 6 14 39 PM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/149203625/f679f3b2-bdc8-47a9-af0f-63ddca3f4764"></p>
-
 
 
 
@@ -51,10 +47,14 @@ Our analysis further revealed a symbiotic relationship between Superhost status 
 
 <p align="center"><img width="558" alt="Screenshot 2024-05-02 at 11 22 14 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/149203625/f7ece7d9-ab8d-4481-9266-f055bcee1c7d"></p>
 
+Further analysis of Superhost status distribution between individual hosts and companies revealed intriguing trends. The data showed that the Superhost program is more prevalent among individual hosts, with a ratio of superhosts to non-superhosts being 1 to 1, compared to a ratio of 1 to 2 in company listings. This disparity suggests that individual hosts are more actively engaged in and committed to achieving Superhost status, which aligns with our earlier observations regarding the impact of Superhosts on guest satisfaction and overall success metrics.
+
+Metrics by Superhosts show that individual superhosts indeed contribute to overall rating, price, and reviews. Our analysis indicated that listings managed by individual superhosts tend to command higher prices, receive more positive reviews, and maintain higher overall ratings compared to non-superhosts. This underscores the pivotal role played by Superhosts in elevating the quality of the Airbnb experience and fostering a culture of excellence within the hosting community.
 
 ### Harnessing the Power of Superhosts for Growth
 
 By incentivizing individual hosts to aspire to Superhost status, Airbnb can empower them to thrive amidst regulatory constraints. Through targeted support and resources, Airbnb can cultivate a vibrant ecosystem of Superhosts, thereby enriching the overall guest experience and bolstering the platform's resilience against regulatory challenges.
+
 
 ## Looking Ahead: Strategies for Success in the Sharing Economy
 
