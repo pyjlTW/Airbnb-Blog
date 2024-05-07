@@ -56,18 +56,24 @@ In response to the challenges faced by individual hosts, we explored the role of
 
 The data above showcases the clustering of listings with a focus on Superhost distribution. Notably, in the central region of Chicago, where corporate hosts predominate and have managed to increase prices, the proportion of Superhosts is significantly different from less central areas. 
 
+#### Super host percentage
 ![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/e3643181-a9f5-4334-bd29-69bd2a7814b1)
+
+#### Sentiment difference of super host listing reviews
+![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/2ea2936c-f8b4-45fb-83a1-d3032e865dc0)
 
 While companies in have a lower percentage of Superhosts at 35%, individual hosts achieve a higher Superhost status at 46%. This divergence highlights a key insight: Superhosts among individual hosts are more prevalent in areas with higher regulatory impacts. This suggests that individual hosts may leverage the benefits of Superhost status—such as increased visibility and trust—to counterbalance the challenges posed by strict regulations. This is contrasted by corporate hosts, who might not rely as heavily on Superhost status due to their different operational scales and strategies.
 
-Further analysis of Superhost status distribution between individual hosts and companies revealed intriguing trends. The data showed that the Superhost program is more prevalent among individual hosts, with a ratio of superhosts to non-superhosts being 1 to 1, compared to a ratio of 1 to 2 in company listings. This disparity suggests that individual hosts are more actively engaged in and committed to achieving Superhost status, which aligns with our earlier observations regarding the impact of Superhosts on guest satisfaction and overall success metrics.
+#### Benefits of superhost
+![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/9e830b1e-f3b4-4630-b81e-fd5881d3b07b)
 
 Metrics by Superhosts show that individual superhosts indeed contribute to overall rating, price, and reviews. Our analysis indicated that listings managed by individual superhosts tend to command higher prices, receive more positive reviews, and maintain higher overall ratings compared to non-superhosts. This underscores the pivotal role played by Superhosts in elevating the quality of the Airbnb experience and fostering a culture of excellence within the hosting community.
 
-### Harnessing the Power of Superhosts for Growth
+### Refining the Superhost Program
+![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/3f4a7406-cd44-4a5d-9a06-cfb8fe0c153e)
+<img width="328" alt="image" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/ede60b1b-9485-4065-86bb-4fc3eaaaa4de">
 
-By incentivizing individual hosts to aspire to Superhost status, Airbnb can empower them to thrive amidst regulatory constraints. Through targeted support and resources, Airbnb can cultivate a vibrant ecosystem of Superhosts, thereby enriching the overall guest experience and bolstering the platform's resilience against regulatory challenges.
-
+This is an application of k-means clustering to host attributes and guest ratings. It identified key groups among hosts, with Cluster 1 and Cluster 2 demonstrating particularly revealing trends. These clusters indicate that while the current Superhost rating threshold stands at 4.8, a more nuanced approach might be beneficial. Our findings suggest that ratings of 4.9 and 4.5 serve as more effective cutoffs for differentiating levels of service quality and guest satisfaction.
 
 ## Looking Ahead: Strategies for Success in the Sharing Economy
 
