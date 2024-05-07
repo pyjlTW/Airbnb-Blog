@@ -29,7 +29,11 @@ Our analysis reveals a clear distinction in the effects of the 2016 ordinance on
 
 ### Regional differences
 
+#### Individual VS Company Listing regions
 <img width="789" alt="Screenshot 2024-05-07 at 1 07 50 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/58fe77a4-10f2-4f81-98d5-80a15f74b229">
+
+#### Regional difference and Price difference by region
+<img width="741" alt="Screenshot 2024-05-07 at 1 14 48 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/cc2afd2e-2d15-4e5c-a05d-113f98ad88de">
 
 #### Regional impacts on price and new listings
 The regional distribution of Airbnb listings in Chicago, as shown in the accompanying maps, further elucidates the differential impact of the 2016 regulations. Corporate hosts are predominantly concentrated in central Chicago, areas known for their high demand and tourism value. This concentration in central locations allows corporate hosts to increase their prices to offset the heightened operational costs due to new taxes and fees.
@@ -38,8 +42,6 @@ The regional distribution of Airbnb listings in Chicago, as shown in the accompa
 > Hotel occupancy rate in the central region of Chicago, specifically in the Loop area, reached 75%. While occupancy rate for the Chicago in total was around 63.1% [^3].
 
 In contrast, individual hosts are more widely dispersed around these central areas, extending into less central regions of Chicago. This spread likely contributes to the variability in demand they experience, which in turn influences their pricing strategies. As depicted in the maps, individual hosts in these less central areas have generally seen a stabilization or decrease in their prices, reflecting the challenges of maintaining competitiveness and demand in regions with lower tourist traffic.
-
-<img width="741" alt="Screenshot 2024-05-07 at 1 14 48 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/cc2afd2e-2d15-4e5c-a05d-113f98ad88de">
 
 This geographic and economic dichotomy underlines the broader implications of regulatory measures on different types of hosts, highlighting how location significantly shapes the challenges and opportunities faced by Airbnb hosts in Chicago.
 
