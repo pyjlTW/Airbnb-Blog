@@ -16,19 +16,23 @@ Our analysis of over 730,000 data points reveals a surge in Airbnb listings unti
 
 ![download-4](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/c5bdad3e-56ce-4dca-8d80-ce2f975e927c)
 
-### Individual VS Corporate Hosts
+## Individual VS Corporate Hosts
 
 Delving deeper into the data, we identified two distinct types of hosts: individual hosts, averaging about 1.4 listings each, and larger enterprises, which manage between 10 to as many as 600 listings. This discrepancy allows us to explore the contrasting operational scales and strategies employed by individual hosts and businesses in the Airbnb ecosystem.
 
-<img width="896" alt="Screenshot 2024-05-07 at 12 39 53 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/be2c962e-6b6d-4d94-a8f4-c88e0240b766">
+#### New Listings
+<img width="1129" alt="Screenshot 2024-05-07 at 12 59 16 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/d0e97104-a48c-41b8-a1c6-e573533ce6f2">
 
-**Listings Analysis:**
-Our analysis reveals a distinct impact of the 2016 regulations on Airbnb listings in Chicago, as visualized in the accompanying graphs. Post-ordinance, listings by individual hosts declined significantly, illustrating the challenges imposed by the new rules. In contrast, listings from larger corporate hosts displayed relative stability. This apparent resilience among corporate hosts was influenced by outliers, which, when excluded, showed a more nuanced impact across all host types.
+#### Price Trend
+<img width="1125" alt="Screenshot 2024-05-07 at 12 59 27 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/4f18f275-636c-4c4e-8417-349da42b5a0d">
 
-**Pricing Trends:**
-Regarding pricing, individual hosts generally experienced a decrease or stabilization in listing prices. This trend likely reflects the lower demand in less central areas where most individual hosts operate. Conversely, corporate hosts, concentrated in high-demand central locations, were able to increase their prices to offset the increased costs brought on by the new taxes and fees. The regional pricing trends and distribution of listings will be further illustrated with maps of Chicago, showing how different areas are affected differently by these regulations.
+**Impact of the 2016 Ordinance**
+Our analysis reveals a clear distinction in the effects of the 2016 ordinance on individual versus corporate hosts. Listings for individual hosts decreased significantly, while corporate host listings showed more stability. Similarly, pricing trends diverged: prices for individual hosts generally remained stable or decreased, whereas prices for corporate hosts increased. These trends suggest underlying regional differences, which we will explore through detailed maps of listing distributions across Chicago.
 
 ### Regional differences
+
+<img width="777" alt="Screenshot 2024-05-07 at 12 57 27 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/56e96e08-da56-4416-a401-d3ec87a17bc1">
+
  Additionally, our analysis unveiled significant differences in pricing strategies between individual hosts and businesses in response to the 2016 regulations. While individual hosts experienced either a decrease or stability in prices, businesses tended to increase their prices. We theorized that businesses could offset increased taxes and fees by raising prices due to consistently high demand in central areas. Conversely, individual hosts in less demanded outer regions faced challenges in raising prices without negatively affecting sales.
 
 While businesses adeptly navigated the regulatory landscape, smaller individual hosts encountered substantial obstacles. The imposition of high taxes, stringent registration requirements, and substantial fines disproportionately impacted individual hosts, resulting in a decline in their listings. In contrast, businesses, leveraging their scale and resources, demonstrated greater resilience in adapting to regulatory changes
