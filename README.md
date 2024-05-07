@@ -65,13 +65,13 @@ The data above showcases the clustering of listings with a focus on Superhost di
 While companies in have a lower percentage of Superhosts at 35%, individual hosts achieve a higher Superhost status at 46%. This divergence highlights a key insight: Superhosts among individual hosts are more prevalent in areas with higher regulatory impacts. This suggests that individual hosts may leverage the benefits of Superhost status—such as increased visibility and trust—to counterbalance the challenges posed by strict regulations. This is contrasted by corporate hosts, who might not rely as heavily on Superhost status due to their different operational scales and strategies.
 
 #### Benefits of superhost
-![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/9e830b1e-f3b4-4630-b81e-fd5881d3b07b)
+![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/e6012cfa-93af-4275-9cec-8cf194433f7a)
 
 Metrics by Superhosts show that individual superhosts indeed contribute to overall rating, price, and reviews. Our analysis indicated that listings managed by individual superhosts tend to command higher prices, receive more positive reviews, and maintain higher overall ratings compared to non-superhosts. This underscores the pivotal role played by Superhosts in elevating the quality of the Airbnb experience and fostering a culture of excellence within the hosting community.
 
 ### Refining the Superhost Program
 ![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/3f4a7406-cd44-4a5d-9a06-cfb8fe0c153e)
-<img width="328" alt="image" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/ede60b1b-9485-4065-86bb-4fc3eaaaa4de">
+<img width="800" alt="image" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/ede60b1b-9485-4065-86bb-4fc3eaaaa4de">
 
 This is an application of k-means clustering to host attributes and guest ratings. It identified key groups among hosts, with Cluster 1 and Cluster 2 demonstrating particularly revealing trends. These clusters indicate that while the current Superhost rating threshold stands at 4.8, a more nuanced approach might be beneficial. Our findings suggest that ratings of 4.9 and 4.5 serve as more effective cutoffs for differentiating levels of service quality and guest satisfaction.
 
