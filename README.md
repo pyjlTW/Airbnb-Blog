@@ -26,16 +26,20 @@ Delving deeper into the data, we identified two distinct types of hosts: individ
 #### Price Trend
 <img width="1125" alt="Screenshot 2024-05-07 at 12 59 27 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/4f18f275-636c-4c4e-8417-349da42b5a0d">
 
+
 **Impact of the 2016 Ordinance**
 Our analysis reveals a clear distinction in the effects of the 2016 ordinance on individual versus corporate hosts. Listings for individual hosts decreased significantly, while corporate host listings showed more stability. Similarly, pricing trends diverged: prices for individual hosts generally remained stable or decreased, whereas prices for corporate hosts increased. These trends suggest underlying regional differences, which we will explore through detailed maps of listing distributions across Chicago.
 
 ### Regional differences
 
-<img width="777" alt="Screenshot 2024-05-07 at 12 57 27 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/56e96e08-da56-4416-a401-d3ec87a17bc1">
+<img width="777" alt="Screenshot 2024-05-07 at 1 01 41 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/5b223cde-334d-4b7e-bec5-111e6c0df73f">
 
- Additionally, our analysis unveiled significant differences in pricing strategies between individual hosts and businesses in response to the 2016 regulations. While individual hosts experienced either a decrease or stability in prices, businesses tended to increase their prices. We theorized that businesses could offset increased taxes and fees by raising prices due to consistently high demand in central areas. Conversely, individual hosts in less demanded outer regions faced challenges in raising prices without negatively affecting sales.
+**Regional impacts on price and new listings**
+The regional distribution of Airbnb listings in Chicago, as shown in the accompanying maps, further elucidates the differential impact of the 2016 regulations. Corporate hosts are predominantly concentrated in central Chicago, areas known for their high demand and tourism value. This concentration in central locations allows corporate hosts to increase their prices to offset the heightened operational costs due to new taxes and fees.
 
-While businesses adeptly navigated the regulatory landscape, smaller individual hosts encountered substantial obstacles. The imposition of high taxes, stringent registration requirements, and substantial fines disproportionately impacted individual hosts, resulting in a decline in their listings. In contrast, businesses, leveraging their scale and resources, demonstrated greater resilience in adapting to regulatory changes
+In contrast, individual hosts are more widely dispersed around these central areas, extending into less central regions of Chicago. This spread likely contributes to the variability in demand they experience, which in turn influences their pricing strategies. As depicted in the maps, individual hosts in these less central areas have generally seen a stabilization or decrease in their prices, reflecting the challenges of maintaining competitiveness and demand in regions with lower tourist traffic.
+
+This geographic and economic dichotomy underlines the broader implications of regulatory measures on different types of hosts, highlighting how location significantly shapes the challenges and opportunities faced by Airbnb hosts in Chicago.
 
 
 ## Superhosts: Champions of Hospitality and Growth
