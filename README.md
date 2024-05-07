@@ -48,13 +48,17 @@ In contrast, individual hosts are more widely dispersed around these central are
 This geographic and economic dichotomy underlines the broader implications of regulatory measures on different types of hosts. While businesses adeptly navigated the regulatory landscape, smaller individual hosts encountered substantial obstacles. The imposition of high taxes, registration requirements, and substantial fines disproportionately impacted individual hosts, resulting in a decline in new listings and lower qualities of housings as lowering cost would not help paying requirements.
 
 
-## Superhosts: Champions of Hospitality and Growth
+## The Role of Superhosts in Mitigating Regulatory Impact
 
-In response to the challenges faced by individual hosts, we explored the role of the Superhost program—a beacon of excellence within the Airbnb community. Superhosts, distinguished by their exceptional hospitality and service, enjoy enhanced visibility and credibility on the platform. Research from Inside Airbnb supports this notion, indicating that Superhosts attract significantly more bookings and higher guest satisfaction rates compared to regular hosts[^5].
+In response to the challenges faced by individual hosts, we explored the role of the Superhost program—a beacon of excellence within the Airbnb community. Superhosts, distinguished by their exceptional hospitality and service, enjoy enhanced visibility and credibility on the platform. Research from Inside Airbnb supports this notion, indicating that Superhosts attract significantly more bookings and higher guest satisfaction rates compared to regular hosts[^5]. 
 
-Our analysis further revealed a symbiotic relationship between Superhost status and individual hosts. Notably, it's evident that the allure of achieving Superhost status incentivizes individual hosts to enhance their listings and service quality. This correlation underscores the effectiveness of the Superhost program in empowering individual hosts and driving the increase in listings, thereby contributing to the overall growth and success of Airbnb.
+<img width="800" alt="Screenshot 2024-05-07 at 1 31 22 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/a709e498-7eb1-46a1-b2c9-8068f8f670c9">
 
-<p align="center"><img width="558" alt="Screenshot 2024-05-02 at 11 22 14 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/149203625/f7ece7d9-ab8d-4481-9266-f055bcee1c7d"></p>
+The data above showcases the clustering of listings with a focus on Superhost distribution. Notably, in the central region of Chicago, where corporate hosts predominate and have managed to increase prices, the proportion of Superhosts is significantly different from less central areas. 
+
+![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/e3643181-a9f5-4334-bd29-69bd2a7814b1)
+
+While companies in have a lower percentage of Superhosts at 35%, individual hosts achieve a higher Superhost status at 46%. This divergence highlights a key insight: Superhosts among individual hosts are more prevalent in areas with higher regulatory impacts. This suggests that individual hosts may leverage the benefits of Superhost status—such as increased visibility and trust—to counterbalance the challenges posed by strict regulations. This is contrasted by corporate hosts, who might not rely as heavily on Superhost status due to their different operational scales and strategies.
 
 Further analysis of Superhost status distribution between individual hosts and companies revealed intriguing trends. The data showed that the Superhost program is more prevalent among individual hosts, with a ratio of superhosts to non-superhosts being 1 to 1, compared to a ratio of 1 to 2 in company listings. This disparity suggests that individual hosts are more actively engaged in and committed to achieving Superhost status, which aligns with our earlier observations regarding the impact of Superhosts on guest satisfaction and overall success metrics.
 
