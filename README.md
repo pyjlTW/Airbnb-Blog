@@ -73,18 +73,13 @@ Metrics by Superhosts show that individual superhosts indeed contribute to overa
 ![image](https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/3f4a7406-cd44-4a5d-9a06-cfb8fe0c153e)
 <img width="974" alt="Screenshot 2024-05-07 at 2 36 40 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/5281c22c-9b01-495f-8f20-7d13d579f0fe">
 
-
 This is an application of k-means clustering to host attributes and guest ratings. It identified key groups among hosts, with Cluster 1 and Cluster 2 demonstrating particularly revealing trends. These clusters indicate that while the current Superhost rating threshold stands at 4.8, a more nuanced approach might be beneficial. Our findings suggest that ratings of 4.9 and 4.5 serve as more effective cutoffs for differentiating levels of service quality and guest satisfaction.
+
+Our clustering analysis suggests a more nuanced approach to the Superhost system, proposing multiple recognition levels to reflect the diverse qualities of hosting excellence. By applying similar data-driven methods to refine other Superhost criteria, such as response times and cancellation rates, Airbnb can better align its recognition program with the varied performance and operational styles of hosts. These adjustments will ensure the program's criteria are more inclusive and representative of all hosts' efforts, leading seamlessly into strategic initiatives for the platform's growth in Chicago.
 
 ## Looking Ahead: Strategies for Success in the Sharing Economy
 
-As Chicago's Airbnb landscape continues to evolve, there are several key takeaways for Airbnb's strategic endeavors:
-
-- **Policy Influence:** Acknowledging the significant impact of city policies on individual hosts, Airbnb must advocate for regulatory frameworks that support and nurture small-scale hosts.
-  
-- **Superhost Focus:** Directing resources towards the development and recognition of Superhosts among individual hosts will foster growth and resilience within the Airbnb community.
-  
-- **Diversification and Expansion:** By diversifying and expanding the Superhost program, Airbnb can broaden access to resources and opportunities, thereby enhancing the overall Airbnb economy.
+As the Airbnb landscape in Chicago continues to evolve, it becomes imperative to adapt our strategies to the realities of the local market. Enhancing the Superhost program, advocating for supportive regulatory frameworks, and expanding access to resources are pivotal steps. These efforts will not only aid in the recovery and stability of small-scale hosts affected by the 2016 ordinance but also enrich the overall Airbnb ecosystem, ensuring a vibrant, equitable, and sustainable future for all stakeholders involved in Chicago’s dynamic home-sharing landscape.
 
 ---
 
