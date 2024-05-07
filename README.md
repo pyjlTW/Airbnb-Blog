@@ -43,7 +43,9 @@ The regional distribution of Airbnb listings in Chicago, as shown in the accompa
 
 In contrast, individual hosts are more widely dispersed around these central areas, extending into less central regions of Chicago. This spread likely contributes to the variability in demand they experience, which in turn influences their pricing strategies. As depicted in the maps, individual hosts in these less central areas have generally seen a stabilization or decrease in their prices, reflecting the challenges of maintaining competitiveness and demand in regions with lower tourist traffic.
 
-This geographic and economic dichotomy underlines the broader implications of regulatory measures on different types of hosts, highlighting how location significantly shapes the challenges and opportunities faced by Airbnb hosts in Chicago.
+<img width="486" alt="Screenshot 2024-05-07 at 1 26 28 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/3a20aec6-f078-4539-8959-100108998b28">
+
+This geographic and economic dichotomy underlines the broader implications of regulatory measures on different types of hosts. While businesses adeptly navigated the regulatory landscape, smaller individual hosts encountered substantial obstacles. The imposition of high taxes, registration requirements, and substantial fines disproportionately impacted individual hosts, resulting in a decline in new listings and lower qualities of housings as lowering cost would not help paying requirements.
 
 
 ## Superhosts: Champions of Hospitality and Growth
