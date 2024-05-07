@@ -7,9 +7,6 @@
 
 Airbnb has reshaped urban hospitality by enabling people to rent out their private spaces. By 2016, Airbnb had woven itself into the fabric of Chicago's tourism economy, flourishing to such an extent that regulatory measures became necessary to manage its impacts on the city. In response to Airbnb's expansion, the City of Chicago introduced comprehensive regulations to maintain control and fairness in the home-sharing market[^2]. These regulations, including registration requirements, taxation, and limitations on rental units[^3], introduced both opportunities and challenges for Airbnb hosts.
 
-> [!NOTE] 
->Chicago hosted 55.2 million tourists in 2019, boasting an average occupancy rate of 63.1% in October 2023[^1]. This underscores Chicago's status as a tourism hotspot with exceptionally high booking rates.
-
 ### Unveiling Insights Through Data Analysis
 
 Our analysis of over 730,000 data points reveals a surge in Airbnb listings until 2016, driven by factors such as the increasing popularity of home-sharing[^4] and the growing acceptance of the sharing economy[^6], followed by a noticeable decline post-regulation, as illustrated in the accompanying graph.
@@ -32,12 +29,15 @@ Our analysis reveals a clear distinction in the effects of the 2016 ordinance on
 
 ### Regional differences
 
-<img width="777" alt="Screenshot 2024-05-07 at 1 01 41 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/5b223cde-334d-4b7e-bec5-111e6c0df73f">
+<img width="789" alt="Screenshot 2024-05-07 at 1 07 50 AM" src="https://github.com/pyjlTW/Airbnb-Blog/assets/60620023/58fe77a4-10f2-4f81-98d5-80a15f74b229">
 
-**Regional impacts on price and new listings**
+#### Regional impacts on price and new listings
 The regional distribution of Airbnb listings in Chicago, as shown in the accompanying maps, further elucidates the differential impact of the 2016 regulations. Corporate hosts are predominantly concentrated in central Chicago, areas known for their high demand and tourism value. This concentration in central locations allows corporate hosts to increase their prices to offset the heightened operational costs due to new taxes and fees.
 
 In contrast, individual hosts are more widely dispersed around these central areas, extending into less central regions of Chicago. This spread likely contributes to the variability in demand they experience, which in turn influences their pricing strategies. As depicted in the maps, individual hosts in these less central areas have generally seen a stabilization or decrease in their prices, reflecting the challenges of maintaining competitiveness and demand in regions with lower tourist traffic.
+
+> [!NOTE] 
+>Chicago hosted 55.2 million tourists in 2019. The Millennium Park was the top tourist attraction in Chicago with nearly 25 million visitors​, where hotel occupancy rate in the central region of Chicago, specifically in the Loop area, reached 75%. While occupancy rate for the Chicago in total was around 63.1%.
 
 This geographic and economic dichotomy underlines the broader implications of regulatory measures on different types of hosts, highlighting how location significantly shapes the challenges and opportunities faced by Airbnb hosts in Chicago.
 
